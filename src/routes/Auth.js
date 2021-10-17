@@ -1,4 +1,4 @@
-import { authService, pro ,gitpro} from "fbase";
+import { authService} from "fbase";
 
 import { useState } from "react";
 
@@ -47,12 +47,12 @@ const Auth = () => {
     } = event;
     var provider;
     if (name === "google") {
-      provider = pro;
+     // provider = pro;
     } else if (name === "github") {
-      provider = gitpro;//new firebaseInstance.auth.GithubAuthProvider();
+     // provider = gitpro;//new firebaseInstance.auth.GithubAuthProvider();
     }
-    const data = await authService.signInWithPopup(provider);
-    console.log(data);
+   // const data = await authService.signInWithPopup(provider);
+   // console.log(data);
   };
 
   return (
